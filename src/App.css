@@ -1,0 +1,499 @@
+/* Header styling */
+.header {
+  width: 80%; /* Change this to 70% if you want it smaller */
+  max-width: 1200px; /* Prevents it from getting too large on big screens */
+  margin: auto; /* Centers the header */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff; /* Adjust as needed */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/* Left section: Logo & Location */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.location {
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.caret {
+  margin-left: 5px;
+}
+
+/* Dropdown styling */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 10px 0;
+  width: 180px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background: #f5f5f5;
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 20px;
+  width: 300px;
+  cursor: text;
+  position: relative;
+}
+
+.search-icon {
+  margin-right: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  width: 100%;
+  cursor: text;
+}
+
+/* Navigation Options */
+.nav-options {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #ff6b6b;
+}
+
+.offers {
+  position: relative;
+}
+
+.new-tag {
+  font-size: 12px;
+  color: white;
+  background: red;
+  padding: 3px 6px;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+/* Icons */
+.user-icon,
+.cart-icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.cart {
+  position: relative;
+  font-size: 18px;
+}
+
+.cart-icon {
+  color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 200px;
+  }
+
+  .nav-options {
+    font-size: 14px;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+}
+
+/* Food Container */
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Food Container - More Items per Row */
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 items per row */
+  gap: 20px;
+  padding: 30px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Food Item */
+.food-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+  transform: scale(1.1);
+}
+
+/* Circular Food Images */
+.food-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Food Name Styling */
+.food-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .food-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .food-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  }
+
+  .food-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .food-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  }
+
+  .food-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .food-name {
+    font-size: 14px;
+  }
+}
+/* Container for Top Restaurants */
+.restaurant-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading Styles */
+.restaurant-container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Restaurant List Layout */
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Restaurant Card Styling */
+.restaurant-card {
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Rating Badge (Top Right Corner) */
+.rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Restaurant Info */
+.restaurant-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.restaurant-info h3 {
+  font-size: 20px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.restaurant-info .cuisine {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.restaurant-info .description {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+/* Footer Styling */
+.footer {
+  background: #ffffff;
+  color: #131212;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+.explore-container {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.explore-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.explore-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.option summary {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+.explore-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f1741a;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0e0d0d;
+}
+
+/* Quick Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #0c0b0b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #f1741a;
+}
+
+/* Contact Info */
+.footer-section p strong {
+  color: #f1741a;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f1741a;
+}
+
+/* Newsletter Subscription */
+.newsletter-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  border: none;
+  background: #f1741a;
+  color: #222;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #f1741a;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}
+
